@@ -109,7 +109,7 @@ const Profile: React.FC = () => {
               addToast({
                 type: "error",
                 title: "Erro na atualização",
-                description: "Ocorreu um erro na atualização",
+                description: "Ocorreu um erro na atualização (teste)",
               });
             }
         }, [addToast, history, updateUser]);
