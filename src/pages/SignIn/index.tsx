@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useContext } from "react";
+import React, { useRef, useCallback } from "react";
 import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
 import { Form } from "@unform/web";
 import { FormHandles } from "@unform/core";
@@ -33,7 +33,7 @@ const SignIn: React.FC = () => {
 
   */
 
-    const { user, signIn } = useAuth();
+    const { signIn } = useAuth();
 
     const { addToast } = useToast();
 
