@@ -94,7 +94,7 @@ const ForgotPassword: React.FC = () => {
             />
 
             <Button loading={loading} type="submit">
-              Recuperar
+              Recuperar Senha
             </Button>
           </Form>
 
