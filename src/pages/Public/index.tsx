@@ -144,10 +144,10 @@ const Public: React.FC = () => {
     <Container>
         <Header>
          <HeaderContent>
-          <img src={logo} alt="Classist" />
+          <img src={'https://fgfinfonet.com.br/marinaldo/assets/img/login_logo.png'} alt="Manager PDV" />
 
           <Profile>
-            <img src={'https://app-classist-test.s3.amazonaws.com/020b90e1d564de3fd9b5-sistema-pdv-integrado-com-ifood-fgf-manager-erp.jpeg'} alt={'Manager PDV'} />
+            <img src={'https://fgfinfonet.com.br/marinaldo/assets/img/login_logo.png'} alt={'Manager PDV'} />
 
             <div>
               <span>Bem-vindo,</span>
@@ -165,7 +165,7 @@ const Public: React.FC = () => {
 
       <Content>
         <Schedule>
-            <h1>Horários agendados</h1>
+            <h1>Horários</h1>
           <p>
             {isToday(selectedDate) && <span>Hoje</span>}
             <span>{selectedDateAsText}</span>
