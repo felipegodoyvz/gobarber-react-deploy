@@ -75,7 +75,7 @@ const Public: React.FC = () => {
           .then(response => {
             setMonthAvailability(response.data);
           });
-      }, [currentMonth, user_id]);
+      }, [currentMonth]);
 
     useEffect(() => {
         api
