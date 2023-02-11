@@ -147,7 +147,7 @@ const Public: React.FC = () => {
           <img src={'https://fgfinfonet.com.br/marinaldo/assets/img/login_logo.png'} alt="Manager PDV" />
 
           <Profile>
-            <img src={'https://fgfinfonet.com.br/marinaldo/assets/img/login_logo.png'} alt={'Manager PDV'} />
+            <img src={'https://fgfmanager.com.br/fgfmanager/assets/img/icons/settings.png'} alt={'Manager PDV'} />
 
             <div>
               <span>Bem-vindo,</span>
@@ -230,7 +230,6 @@ const Public: React.FC = () => {
           <Section>
                 <strong>Tarde</strong>
 
-                <strong>Manhã</strong>
                 {isToday(selectedDate) && (
                 <p>Nenhum horário disponível</p>
             )}
