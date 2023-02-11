@@ -75,6 +75,8 @@ const SignIn: React.FC = () => {
     } catch (err) {
         //setLoading(false);
 
+        alert("Ocorreu um erro ao fazer login, cheque as credenciais");
+
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
 
@@ -88,6 +90,9 @@ const SignIn: React.FC = () => {
           title: "Erro na autenticação",
           description: "Ocorreu um erro ao fazer login, cheque as credenciais",
         });
+
+
+
       }
     },
     [signIn ,addToast, history],
@@ -115,7 +120,7 @@ const SignIn: React.FC = () => {
             />
             <Button type="submit">Entrar</Button>
 
-            <Link to="/forgot-password">Esqueci minha senha</Link>
+            {/*<Link to="/forgot-password">Esqueci minha senha</Link>*/}
             <Link to="/signup"><FiLogIn />Criar conta</Link>
             </Form>
         </AnimationContainer>

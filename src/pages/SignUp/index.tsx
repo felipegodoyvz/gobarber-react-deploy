@@ -48,15 +48,18 @@ const SingUp: React.FC = () => {
 
             await api.post("users", data);
 
+            alert("Cadastro realizado. Você já pode fazer seu logon.");
+
             history.push("/");
 
-            addToast({
+            /*addToast({
                 type: "success",
                 title: "Cadastro realizado",
-                description: "Você já pode fazer seu logon no GoBarber",
-              });
+                description: "Você já pode fazer seu logon.",
+              });*/
 
           } catch (err) {
+            alert("Ocorreu um erro ao fazer cadastro, cheque seus dados ou confirme se já existe o cadastro");
             if (err instanceof Yup.ValidationError) {
                 //setLoading(false);
 
