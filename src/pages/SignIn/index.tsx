@@ -10,7 +10,7 @@ import { useAuth } from "../../hooks/auth";
 import { useToast } from "../../hooks/toast";
 import getValidationErrors from "../../utils/getValidationErrors";
 
-import logoImg from "../../assets/logo.svg";
+import logoImg from "../../assets/login_logo.png";
 
 import Input from "../../components/Input";
 import Button from "../../components/Button";
@@ -102,7 +102,7 @@ const SignIn: React.FC = () => {
     <Container>
         <Content>
         <AnimationContainer>
-        <img src={logoImg} alt="Classist - Plataforma de Classificação Fiscal" />
+        <img src={logoImg} alt="Manager PDV" />
 
             <Form ref={formRef} onSubmit={ handleSubmit }>
             <h1>Faça seu logon</h1>
@@ -121,7 +121,7 @@ const SignIn: React.FC = () => {
             <Button type="submit">Entrar</Button>
 
             {/*<Link to="/forgot-password">Esqueci minha senha</Link>*/}
-            <Link to="/signup"><FiLogIn />Criar conta</Link>
+            {/*<Link to="/signup"><FiLogIn />Criar conta</Link>*/}
             </Form>
         </AnimationContainer>
         </Content>
