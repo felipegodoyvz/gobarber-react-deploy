@@ -30,6 +30,10 @@ interface MonthAvailabilityItem {
     available: boolean;
   }
 
+var user_id: '1ff6cbf0-0123-43f4-8620-83cfeb16bd10';
+var user_name: 'Manager PDV';
+
+
 interface Appointments {
     id: string;
     date: string;
@@ -62,7 +66,7 @@ const Public: React.FC = () => {
 
     useEffect(() => {
         api
-          .get(`/providers/1ff6cbf0-0123-43f4-8620-83cfeb16bd10/month-availability`, {
+          .get(`/providers/${user_id}/month-availability`, {
             params: {
               year: currentMonth.getFullYear(),
               month: currentMonth.getMonth() + 1,
@@ -71,7 +75,7 @@ const Public: React.FC = () => {
           .then(response => {
             setMonthAvailability(response.data);
           });
-      }, [currentMonth, '1ff6cbf0-0123-43f4-8620-83cfeb16bd10']);
+      }, [currentMonth, user_id]);
 
     useEffect(() => {
         api
@@ -148,7 +152,7 @@ const Public: React.FC = () => {
             <div>
               <span>Bem-vindo,</span>
               <Link to="/profile">
-                <strong>{'Manager PDV'}</strong>
+                <strong>{user_name}</strong>
               </Link>
             </div>
           </Profile>
