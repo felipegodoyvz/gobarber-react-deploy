@@ -20,7 +20,7 @@ import {
     Calendar
 } from "./styles";
 
-import logo from "../../assets/logo.svg";
+//import logo from "../../assets/logo.svg";
 
 import { useAuth } from "../../hooks/auth";
 import api from "../../services/api";
