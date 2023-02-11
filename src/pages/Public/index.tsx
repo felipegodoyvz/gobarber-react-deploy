@@ -41,7 +41,7 @@ interface Appointments {
   }
 
 const Public: React.FC = () => {
-    const { signOut, user } = useAuth();
+    const { signOut } = useAuth();
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [currentMonth, setCurrentMonth] = useState(new Date());
     const [monthAvailability, setMonthAvailability] = useState<
