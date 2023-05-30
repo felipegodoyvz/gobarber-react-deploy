@@ -20,7 +20,6 @@ import {
     Schedule,
     NextAppointment,
     Section,
-    Appointment,
     Calendar
 } from "./styles";
 
